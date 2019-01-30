@@ -12,7 +12,7 @@
         <%
             User u = (User)request.getSession().getAttribute("userObject");
     
-        if( u == null && !u.getRol().equals("ROLE_ADMIN") )
+        if(!u.getRol().equals("ROLE_ADMIN") )
         response.sendError ( HttpServletResponse.SC_UNAUTHORIZED, "You don't have enough privileges" );
     
         %>
@@ -33,7 +33,7 @@
                   
                 %>
                 
-                ${userObject}
+                
         <c:choose>
 
             <c:when test="${not empty userObject}">

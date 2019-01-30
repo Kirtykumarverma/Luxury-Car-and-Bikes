@@ -21,8 +21,8 @@
 
 
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-    <a class="navbar-brand" href="http://localhost:${pageContext.request.localPort}${pageContext.request.contextPath}/index.jsp">ApniDukan</a>
+<nav class="navbar navbar-expand-lg navbar-inverse bg-light sticky-top">
+    <a class="navbar-brand" href="http://localhost:${pageContext.request.localPort}${pageContext.request.contextPath}/index.jsp">Luxury Cars and Bikes</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -30,7 +30,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="/EcomProj/index.jsp">Home<span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="/EcomProj/index.jsp"><i class="fas fa-home"></i>Home<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="/EcomProj/AboutUs.jsp">About Us</a>
@@ -40,10 +40,7 @@
 
 
 
-        <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
+        
 
         <% session.setAttribute("userObject", request.getSession().getAttribute("userObject"));
         %>
@@ -78,10 +75,10 @@
             <c:otherwise>
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="/EcomProj/User/Login.jsp">Log In</a>
+                        <a class="nav-link" href="/EcomProj/User/Login.jsp"><i class="fas fa-sign-in-alt"></i>Log In</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="http://localhost:8080/EcomProj/User/Registration.jsp">Registration</a>
+                        <a class="nav-link" href="http://localhost:8080/EcomProj/User/Registration.jsp"><i class="fas fa-user-plus"></i>Sign Up</a>
                     </li>
                 </ul>
             </c:otherwise>

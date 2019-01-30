@@ -48,32 +48,33 @@
 
                     <h4>Current Shipping Address:</h4>
 
-                    <hr>
+                    
 
                     <h3>${object.getShipTo()}</h3>
 
                 </c:when>
 
                 <c:otherwise>
-                    <h1>Shipping Address Not Set</h1>
+                    <h1>Shipping Address</h1>
                 </c:otherwise>
             </c:choose>
-
+                    <hr>
             <c:choose>
                 <c:when test="${not empty object.getBillTo()}">
 
-                    <h4>Current Billing Address:</h4>
+                    <h4>Current Billing Address: </h4>
 
-                    <hr>
+                    
 
                     <h4>${object.getBillTo()}</h4>
 
                 </c:when>
 
                 <c:otherwise>
-                    <h1>Billing Address Not Set</h1>
+                    <h1>Billing Address</h1>
                 </c:otherwise>
             </c:choose>
+                    <hr>
 
             <form action="?updateAddress=true" method="post">
 
@@ -93,6 +94,6 @@
 
         </div>
                 <br>
-                <a class="btn btn-danger" href="ViewInvoice.jsp">View Order Summary</a>
+                <a class="btn btn-danger" href="ViewInvoice.jsp">Buy Now</a>
     </body>
 </html>
